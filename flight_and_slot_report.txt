@@ -1,0 +1,128 @@
+========================================================
+       Airline Flight and Slot Allocation Report        
+             Generated on: 2025-07-25 20:08:12             
+========================================================
+
+===== Final Flight Status =====
+
+ID   Airline            Domain         Type       From             To               Via              Slot  Emergency Runway Delay  Status
+---- ------------------ -------------- ---------- ---------------- ---------------- ---------------- ----- --------- ------ ------ ------
+1    Indigo             domestic       Arrival    Hyderabad        Chennai          Coimbatore       1     YES       1      0      OK
+2    Air Asia           international  Arrival    Jakarta          Chennai          Singapore        1     No        2      0      OK
+3    Lufthansa          international  Departure  Frankfurt        Chennai          Mumbai           1     No        3      2      OK
+4    Air India          international  Arrival    Paris            Chennai          Mumbai           1     No        1      0      OK
+5    Air Asia           international  Departure  Chennai          Hanoi            Bangkok          1     No        2      0      OK
+6    Lufthansa          international  Departure  Chennai          Zurich           Munich           1     No        3      0      OK
+7    Lufthansa          international  Departure  Chennai          Munich           Vienna           1     No        1      8      OK
+8    Air India          international  Arrival    London           Chennai          Mumbai           2     YES       1      0      OK
+9    Air India          domestic       Departure  Chennai          Varanasi         Lucknow          2     YES       2      0      OK
+10   Air Asia           international  Arrival    Bangkok          Chennai          Kuala Lumpur     2     No        2      0      OK
+11   Air Asia           international  Departure  Chennai          Singapore        Jakarta          2     No        3      0      OK
+12   Lufthansa          international  Departure  Chennai          Hamburg          Berlin           2     No        3      0      OK
+13   Lufthansa          international  Departure  Chennai          Berlin           Frankfurt        2     No        1      0      OK
+14   SpiceJet           domestic       Arrival    Dehradun         Chennai          Delhi            3     YES       2      18     OK
+15   SpiceJet           domestic       Arrival    Jaipur           Chennai          Hyderabad        3     YES       1      0      OK
+16   Air Asia           international  Arrival    Hong Kong        Chennai          Singapore        3     No        1      0      OK
+17   Lufthansa          international  Arrival    Frankfurt        Chennai          Dubai            3     No        3      0      OK
+18   Air Asia           international  Departure  Chennai          Phuket           Bangkok          3     No        2      0      OK
+19   Air India          domestic       Departure  Chennai          Guwahati         Kolkata          3     No        1      0      OK
+20   Indigo             domestic       Departure  Chennai          Lucknow          Delhi            3     No        3      0      OK
+21   Lufthansa          international  Arrival    Berlin           Chennai          Frankfurt        4     YES       1      0      OK
+22   Indigo             domestic       Arrival    Bhubaneswar      Chennai          Vizag            4     No        2      3      OK
+23   SpiceJet           domestic       Departure  Chennai          Goa              Mumbai           4     No        2      14     OK
+24   SpiceJet           domestic       Departure  Chennai          Pune             Mumbai           4     No        1      0      OK
+25   SpiceJet           domestic       Arrival    Surat            Chennai          Ahmedabad        4     No        1      0      OK
+26   SpiceJet           domestic       Arrival    Kochi            Chennai          Bangalore        4     No        2      0      OK
+27   Indigo             domestic       Departure  Chennai          Patna            Kolkata          4     No        3      0      OK
+28   Indigo             domestic       Departure  Chennai          Ahmedabad        Jaipur           4     No        3      0      OK
+29   Air Asia           international  Arrival    Kuala Lumpur     Chennai          Bangkok          5     YES       1      0      OK
+30   Air India          domestic       Departure  Chennai          Kolkata          Delhi            5     No        3      0      OK
+31   Air India          domestic       Arrival    Chennai          Delhi            Mumbai           5     No        3      2      OK
+32   Indigo             domestic       Arrival    Nagpur           Chennai          Hyderabad        5     No        1      0      OK
+33   Indigo             domestic       Departure  Chennai          Udaipur          Jaipur           5     No        2      0      OK
+34   Indigo             domestic       Arrival    Goa              Chennai          Kochi            5     No        2      22     OK
+35   SpiceJet           domestic       Departure  Chennai          Amritsar         Delhi            5     No        1      0      OK
+36   Air India          domestic       Arrival    Madurai          Chennai          Bangalore        N/A   No        -      24     Unaccom.
+37   SpiceJet           domestic       Departure  Chennai          Trivandrum       Kochi            N/A   No        -      10     Unaccom.
+38   Air India          domestic       Arrival    Coimbatore       Chennai          Mumbai           N/A   No        -      0      Unaccom.
+39   Lufthansa          international  Arrival    Vienna           Chennai          Dubai            N/A   No        -      8      Unaccom.
+40   Lufthansa          international  Arrival    Munich           Chennai          Delhi            N/A   No        -      12     Unaccom.
+41   Air Asia           international  Departure  Chennai          Kuala Lumpur     Jakarta          N/A   No        -      21     Unaccom.
+42   Air Asia           international  Arrival    Singapore        Chennai          Male             N/A   No        -      13     Unaccom.
+43   SpiceJet           domestic       Arrival    Mumbai           Chennai          Kolkata          N/A   No        -      20     Unaccom.
+44   Indigo             domestic       Departure  Chennai          Bangalore        Hyderabad        N/A   No        -      0      Unaccom.
+45   Air India          international  Departure  Chennai          Dubai            Abu Dhabi        N/A   No        -      9      Unaccom.
+---- ------------------ -------------- ---------- ---------------- ---------------- ---------------- ----- --------- ------ ------ ------
+Summary: 35 OK, 0 Unallocated, 0 Rerouted, 10 Unaccommodated.
+
+
+===== Slot Allocation Summary =====
+
+Slot  Total      Int'l      Domestic  Capacity   | Runway 1 Runway 2 Runway 3
+----- ---------- ---------- --------- ---------- | ------- ------- -------
+1     9          8          1         9 / 9      | 3       2       2      
+2     9          8          1         9 / 9      | 2       2       2      
+3     9          3          6         9 / 9      | 3       2       2      
+4     9          1          8         9 / 9      | 3       3       2      
+5     9          1          8         9 / 9      | 3       2       2      
+----- ---------- ---------- --------- ---------- | ------- ------- -------
+
+
+===== Flights by Slot and Runway (Final) =====
+
+--- Slot 1 ---
+ID   Plane ID     Airline            Type       Runway Emergency Delay 
+---- ------------ ------------------ ---------- ------ --------- ------
+1    IN7890       Indigo             Arrival    1      YES       0     
+2    AK5678       Air Asia           Arrival    2      No        0     
+3    LH5693       Lufthansa          Departure  3      No        2     
+4    AI1278       Air India          Arrival    1      No        0     
+5    AK7890       Air Asia           Departure  2      No        0     
+6    LH4321       Lufthansa          Departure  3      No        0     
+7    LH5612       Lufthansa          Departure  1      No        8     
+
+--- Slot 2 ---
+ID   Plane ID     Airline            Type       Runway Emergency Delay 
+---- ------------ ------------------ ---------- ------ --------- ------
+8    AI9087       Air India          Arrival    1      YES       0     
+9    AI9012       Air India          Departure  2      YES       0     
+10   AK5478       Air Asia           Arrival    2      No        0     
+11   AK2346       Air Asia           Departure  3      No        0     
+12   LH8901       Lufthansa          Departure  3      No        0     
+13   LH3209       Lufthansa          Departure  1      No        0     
+
+--- Slot 3 ---
+ID   Plane ID     Airline            Type       Runway Emergency Delay 
+---- ------------ ------------------ ---------- ------ --------- ------
+14   SG3457       SpiceJet           Arrival    2      YES       18    
+15   SG7689       SpiceJet           Arrival    1      YES       0     
+16   AK8901       Air Asia           Arrival    1      No        0     
+17   LH6547       Lufthansa          Arrival    3      No        0     
+18   AK3421       Air Asia           Departure  2      No        0     
+19   AI6543       Air India          Departure  1      No        0     
+20   IN3456       Indigo             Departure  3      No        0     
+
+--- Slot 4 ---
+ID   Plane ID     Airline            Type       Runway Emergency Delay 
+---- ------------ ------------------ ---------- ------ --------- ------
+21   LH7890       Lufthansa          Arrival    1      YES       0     
+22   IN6789       Indigo             Arrival    2      No        3     
+23   SG3456       SpiceJet           Departure  2      No        14    
+24   SG5412       SpiceJet           Departure  1      No        0     
+25   SG4567       SpiceJet           Arrival    1      No        0     
+26   SG7652       SpiceJet           Arrival    2      No        0     
+27   IN2109       Indigo             Departure  3      No        0     
+28   IN4327       Indigo             Departure  3      No        0     
+
+--- Slot 5 ---
+ID   Plane ID     Airline            Type       Runway Emergency Delay 
+---- ------------ ------------------ ---------- ------ --------- ------
+29   AK1987       Air Asia           Arrival    1      YES       0     
+30   AI3214       Air India          Departure  3      No        0     
+31   AI4532       Air India          Arrival    3      No        2     
+32   IN3470       Indigo             Arrival    1      No        0     
+33   IN9012       Indigo             Departure  2      No        0     
+34   IN8092       Indigo             Arrival    2      No        22    
+35   SG6789       SpiceJet           Departure  1      No        0     
+
+====================== End of Report ======================
